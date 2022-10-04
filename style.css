@@ -2,6 +2,24 @@
   background-color: #ea2027;
 }
 
+body {
+    font-family: arial, helvetica, sans-serif;
+    background-color: #0652DD;
+    color: white;
+}
+
+button {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    border: 0;
+    border-radius: 50px;
+    font-size: 1.6em;
+    background-color: white;
+    cursor: pointer;
+    overflow: hidden;
+}
+
 main {
     display: grid;
     place-items: center;
@@ -31,6 +49,22 @@ p {
     margin-left: 20px;
     background: url(https://cdn.glitch.com/fe55c52b-f859-4f17-a4c6-1af45426e959%2Frocket.png?v=1620489294028) right center no-repeat;
     background-size: 60px;
+}
+
+input { 
+    width: 300px;
+    padding: 20px;
+    font-size: 2em;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: inset 1px 0px 5px 4px rgba(0,0,0,0.2);
+}
+  
+.congrats {
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bold;
+    color: #FFC312;
 }
 
 @keyframes shake {
