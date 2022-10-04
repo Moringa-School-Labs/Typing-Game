@@ -10,7 +10,7 @@ function startGame() {
   let quoteText = "type me";
   wordQueue = quoteText.split(" ");
   quote.innerHTML = wordQueue.map((word) => (`<span>${word}</span>`)).join("");
-
+  startTime = new Date().getTime();
 }
 
 function checkInput() {
