@@ -2,22 +2,19 @@
   background-color: #ea2027;
 }
 
-body {
-  font-family: arial, helvetica, sans-serif;
-  background-color: #0652dd;
-  color: white;
+span:after {
+  content: "";
+  display: inline-block;
+  width: 6px;
 }
 
-button {
-  display: flex;
-  margin: 0 auto;
-  padding: 20px;
-  border: 0;
-  border-radius: 50px;
-  font-size: 1.6em;
-  background-color: white;
-  cursor: pointer;
-  overflow: hidden;
+.highlight {
+  color: #ffc312;
+  text-decoration: underline;
+}
+
+.winner {
+  background-image: url(https://acegif.com/wp-content/uploads/gif/confetti-31.gif);
 }
 
 main {
@@ -42,14 +39,22 @@ p {
   font-size: 1.6em;
 }
 
-.rocket {
-  display: block;
-  width: 60px;
-  height: 34px;
-  margin-left: 20px;
-  background: url(https://cdn.glitch.com/fe55c52b-f859-4f17-a4c6-1af45426e959%2Frocket.png?v=1620489294028)
-    right center no-repeat;
-  background-size: 60px;
+body {
+  font-family: arial, helvetica, sans-serif;
+  background-color: #0652dd;
+  color: white;
+}
+
+button {
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+  border: 0;
+  border-radius: 50px;
+  font-size: 1.6em;
+  background-color: white;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 input {
@@ -68,8 +73,18 @@ input {
   color: #ffc312;
 }
 
+.rocket {
+  display: block;
+  width: 60px;
+  height: 34px;
+  margin-left: 20px;
+  background: url(https://cdn.glitch.com/fe55c52b-f859-4f17-a4c6-1af45426e959%2Frocket.png?v=1620489294028)
+    right center no-repeat;
+  background-size: 60px;
+}
+
 .started {
-  animation-name: shake 0.5s;
+  animation: shake 0.5s;
 }
 
 @keyframes shake {
